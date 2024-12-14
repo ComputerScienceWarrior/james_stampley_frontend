@@ -9,6 +9,7 @@
 
 .header{
     padding: 70px;
+    text-align: center;
 }
 
 .headerText{
@@ -16,4 +17,39 @@
     font-family: cursive;
     font-style: italic;
     letter-spacing: 1px;
+}
+
+.linksWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#aboutButton{
+    border-color: blue;
+    color: blue;
+}
+
+#contactButton{
+    border-color: green;
+    color: green;
+}
+
+#projectsButton{
+    border-color: red;
+    color: red;
+}
+
+#resumeButton{
+    border-color: black;
+    color: black;
 }
