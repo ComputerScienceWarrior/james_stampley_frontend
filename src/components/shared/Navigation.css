@@ -1,6 +1,6 @@
-.wrapper{
+/* .wrapper{
 
-}
+} */
 
 .navigationWrapper{
     display: flex;
@@ -10,4 +10,8 @@
 .items{
     margin-left: 10px;
     margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
 }
