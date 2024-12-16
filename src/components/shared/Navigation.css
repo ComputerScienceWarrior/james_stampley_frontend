@@ -1,0 +1,13 @@
+.wrapper{
+
+}
+
+.navigationWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.items{
+    margin-left: 10px;
+    margin-right: 10px;
+}
