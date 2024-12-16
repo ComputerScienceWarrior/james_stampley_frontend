@@ -1,10 +1,15 @@
 import React from "react";
+import './About.css';
+import aboutMeText from "../extras/AboutMeText";
 
 const About = () => {
     return(
-        <div>
-            About
-        </div>
+        <section className="wrapper">
+            <header>A little about James-Ryan Stampley...</header>
+            <section className="body">
+                {aboutMeText}
+            </section>
+        </section>
     );
 };
 
