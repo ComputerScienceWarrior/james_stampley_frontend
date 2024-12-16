@@ -1,22 +1,20 @@
 .container{
     display: flex;
     justify-content: center;
-    border: solid 1px black;
-    border-radius: 10px;
     height: 100%;
     padding: 20px;
 }
 
-.header{
-    padding: 70px;
-    text-align: center;
-}
+/* .header{
+
+} */
 
 .headerText{
     font-size: 32px;
     font-family: cursive;
     font-style: italic;
     letter-spacing: 1px;
+    padding: 50px;
 }
 
 .linksWrapper{
@@ -26,12 +24,27 @@
 }
 
 .buttons{
-    width: 200px;
+    width: 35%;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
+    border-width: 1px;
     background-color: white;
     cursor: pointer;
+    margin-bottom: 50px;
+    transition: 0.2s;
+}
+.buttons:hover {
+    border-width: 3px;
+    transition: 0.2s;
+    width: 37%;
+}
+
+.buttons a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 20px;
 }
 
 #aboutButton{
