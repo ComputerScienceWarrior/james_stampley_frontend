@@ -1,6 +1,6 @@
 import React from "react";
 import './Resume.css';
-import { summaryText } from "../extras/AboutMeText";
+import { summaryText } from "../extras/TextBodies";
 
 const Resume = () => {
     return(
