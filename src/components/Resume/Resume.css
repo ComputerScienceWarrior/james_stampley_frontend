@@ -7,25 +7,23 @@
     margin-bottom: 10px;
 }
 
+.resumePadded{
+    padding: 20px;
+}
+
 .headerInfo{
     display: flex;
     flex-direction: column;
-    margin: 20px;
     font-size: 14px;
-}
-
-.summary{
-
 }
 
 .titleHeader{
     text-decoration: underline;
-    margin: 20px;
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .summaryBody{
-    padding-left: 20px;
-    padding-right: 20px;
     font-size: 14px;
 }
