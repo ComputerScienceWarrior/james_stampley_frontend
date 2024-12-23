@@ -1,0 +1,14 @@
+.nameAndDateWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.companyName1{
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.workExperienceSummaries{
+    padding: 20px;
+}
