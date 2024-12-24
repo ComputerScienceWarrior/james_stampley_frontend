@@ -4,7 +4,7 @@ import React from "react";
 const WorkExperience = ( props ) => {
     return(
         <section className="workExperienceSummaries">
-            <section className="date">{props.jobTitle} - {props.date}</section>
+            <section className="date">{props.jobName} - <b>{props.jobTitle}</b></section>
             <ul>
                 <li>{props.bullet1}</li><br/>
                 <li>{props.bullet2}</li><br/>
