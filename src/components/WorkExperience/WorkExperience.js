@@ -1,5 +1,5 @@
 import React from "react";
-
+import './WorkExperience.css';
 
 const WorkExperience = ( props ) => {
     return(
