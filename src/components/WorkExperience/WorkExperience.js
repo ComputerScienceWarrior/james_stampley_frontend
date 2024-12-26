@@ -6,10 +6,10 @@ const WorkExperience = ( props ) => {
         <section className="workExperienceSummaries">
             <section className="date">{props.jobName} - <b>{props.jobTitle}</b></section>
             <ul>
-                <li>{props.bullet1}</li><br/>
-                <li>{props.bullet2}</li><br/>
-                <li>{props.bullet3}</li><br/>
-                <li>{props.bullet4}</li><br/>
+                {props.bullet1 && ( <li>{props.bullet1}</li> ) }
+                {props.bullet2 && ( <li>{props.bullet2}</li> ) }
+                {props.bullet3 && ( <li>{props.bullet3}</li> ) }
+                {props.bullet4 && ( <li>{props.bullet4}</li> ) }
             </ul>
         </section>
     );
