@@ -2,6 +2,7 @@ import React from "react";
 import './Resume.css';
 import { summaryText } from "../extras/TextBodies";
 import WorkExperience from "../WorkExperience/WorkExperience";
+import Education from "../Education/Education";
 
 const Resume = () => {
     return(
@@ -43,6 +44,44 @@ const Resume = () => {
                     bullet2="Monitored entrance and exit areas to ensure safety, security, and cleanliness while supporting loss prevention efforts by reporting suspicious activities."
                     bullet3="Assisted customers with directions, inquiries, and resolving concerns, coordinating with team members to address their needs promptly."
                     bullet4="Demonstrated strong communication skills, a positive attitude, and professionalism in handling diverse customer interactions."
+                />
+                <section className="titleHeader">Education</section>
+                <Education 
+                    name="Mount Miguel High"
+                    gradeLevel="High School"
+                    yearsAttended="2006 to 2009"
+                    degree="High School Diploma"
+                    bullet1="Obtained High School Diploma."
+                />
+                <Education 
+                    name="Grand Canyon University"
+                    gradeLevel="College"
+                    yearsAttended="October 2017 to October 2019"
+                    degree=""
+                    bullet1="Attended Grand Canyon University to study Computer Science."
+                    bullet2="Completed coursework in Java, C#, PHP, JavaScript, and SQL."
+                    bullet3="Developed a strong foundation in object-oriented programming concepts."
+                    bullet4="Enhanced problem-solving skills and programming proficiency."
+                />
+                <Education 
+                    name="Flatiron Coding School"
+                    gradeLevel="Trade School"
+                    yearsAttended=" July 2019 to March 2020"
+                    degree=""
+                    bullet1="Attended Flatiron Coding School's program, focusing on Ruby development."
+                    bullet2="Gained foundational knowledge in web development and object-oriented programming."
+                    bullet3="Acquired hands-on experience building applications with Ruby and Ruby on Rails."
+                    bullet4="Leveraged skills gained to jumpstart professional experience in software development."
+                />
+                <Education 
+                    name="Netcom Learning School"
+                    gradeLevel="Trade School"
+                    yearsAttended="April 2024 to July 2024"
+                    degree=""
+                    bullet1="Completed training remotely with a focus on IT fundamentals and certifications."
+                    bullet2="Earned the CompTIA ITF+ and Core 1 A+ certifications."
+                    bullet3="Gained knowledge in IT basics, including coursework in Network+ fundamentals."
+                    bullet4="Continuing preparation to solidify skills and earn certifications in Core 2 A+ and Network+."
                 />
             </section>
         </section>
