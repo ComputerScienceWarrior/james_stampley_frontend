@@ -22,8 +22,10 @@
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: lightgray;
+    padding: 3px;
 }
 
 .summaryBody{
-    font-size: 14px;
+    margin-left: 20px;
 }
