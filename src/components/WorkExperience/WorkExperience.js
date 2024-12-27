@@ -11,7 +11,12 @@ const WorkExperience = ( props ) => {
         <section className="workExperienceSummaries">
             <section className="date">{props.jobName} - <b>{props.jobTitle}</b>
                 <button className="viewMoreToggle" onClick={changeView}>
-                    <img alt="img" className="imageArrow" src="/drop-down-arrow.png"/>
+                    { viewMore 
+                        ?
+                            <img alt="img" className="imageArrow" src="/arrow-up.png"/>
+                        : 
+                            <img alt="img" className="imageArrow" src="/drop-down-arrow.png"/>
+                    } 
                 </button>
             </section>
             {
