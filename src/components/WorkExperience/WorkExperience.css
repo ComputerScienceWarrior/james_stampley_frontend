@@ -1,0 +1,25 @@
+.nameAndDateWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.companyName1{
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.workExperienceSummaries{
+    margin: 20px;
+}
+
+.viewMoreToggle{
+    float: right;
+    width: 50px;
+    height: 20px;
+}
+
+.imageArrow{
+    width: 16px;
+    height: 16px;
+}

@@ -1,0 +1,9 @@
+.educationWrapper{
+    margin: 20px;
+}
+
+.schoolNameAndDatesAttended{
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+}

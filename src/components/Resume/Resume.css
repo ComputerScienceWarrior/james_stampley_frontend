@@ -1,0 +1,31 @@
+.resumeContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.resumePadded{
+    padding: 20px;
+}
+
+.headerInfo{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.titleHeader{
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    padding: 3px;
+}
+
+.summaryBody{
+    margin-left: 20px;
+}
