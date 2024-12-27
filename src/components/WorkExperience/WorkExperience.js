@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import './WorkExperience.css';
 
 const WorkExperience = ( props ) => {
-    return(
+    const [viewMore, setViewMore] = useState(false);
+
+    const changeView = () => {
+        setViewMore(!viewMore)
+    }
+    return (
         <section className="workExperienceSummaries">
-            <section className="date">{props.jobName} - <b>{props.jobTitle}</b></section>
-            <ul>
-                {props.bullet1 && ( <li>{props.bullet1}</li> ) }
-                {props.bullet2 && ( <li>{props.bullet2}</li> ) }
-                {props.bullet3 && ( <li>{props.bullet3}</li> ) }
-                {props.bullet4 && ( <li>{props.bullet4}</li> ) }
-            </ul>
+            <section className="date">{props.jobName} - <b>{props.jobTitle}</b>
+                <button className="viewMoreToggle" onClick={changeView}>
+                    <img alt="img" className="imageArrow" src="/drop-down-arrow.png"/>
+                </button>
+            </section>
+            {
+                viewMore && (
+                    <ul>
+                        { props.bullet1 && ( <li>{props.bullet1}</li> ) }
+                        { props.bullet2 && ( <li>{props.bullet2}</li> ) }
+                        { props.bullet3 && ( <li>{props.bullet3}</li> ) }
+                        { props.bullet4 && ( <li>{props.bullet4}</li> ) }
+                    </ul>
+                )
+            }
         </section>
     );
 };
