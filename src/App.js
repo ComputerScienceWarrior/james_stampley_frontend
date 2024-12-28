@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Resume from './components/Resume/Resume';
 import Projects from './components/Projects/Projects';
+import ProjectShow from './components/ProjectShow/ProjectShow';
 import Navigation from './components/shared/Navigation';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/project/:id" element={<ProjectShow />} />
       </Routes>
     </div>
   );
