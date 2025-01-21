@@ -9,10 +9,12 @@ const ProjectShow = () => {
     const name = location.state?.name;
     const caption = location.state?.caption;
     const image = location.state?.image;
+    const language = location.state?.language;
 
     return (
         <section className="projectShowWrapper">
             <section className="projectDetails">
+                <div className="programmingLanguage">Language: <span>{language}</span></div>
                 <div className="projectDetail">ID: <span>{id}</span></div>
                 <div className="projectDetail">Project Name: <span>{name}</span></div>
             </section>
