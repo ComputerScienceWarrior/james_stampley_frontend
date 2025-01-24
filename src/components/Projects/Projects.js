@@ -15,6 +15,7 @@ const Projects = () => {
                     caption={project.caption}
                     imageSource={project.imageSource}
                     language={project.language}
+                    cardColor={project.cardColor}
                 />
             )
            })} 

@@ -1,3 +1,19 @@
-.projectsWrapper{
-    margin: 40px;
+.projectsWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px;
+    justify-items: center; 
+    padding: 20px; 
+}
+
+@media (max-width: 768px) {
+    .projectsWrapper {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .projectsWrapper {
+        grid-template-columns: 1fr; /* 1 item per row on very small screens */
+    }
 }
