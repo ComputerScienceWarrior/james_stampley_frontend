@@ -1,0 +1,52 @@
+.projectWrapper {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.projectCardName {
+    margin-bottom: 10px;
+}
+
+.cardImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: auto;
+}
+
+.cardCaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.language{
+    text-align: center;
+    border: black solid 1px;
+    margin-top: 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+#yellow-color{
+    background-color: yellow;
+    color: black;
+}
+
+#maroon-color{
+    background-color: maroon;
+}
+
+#light-blue-color{
+    background-color: lightblue;
+    color: black;
+}
+
+#purple-color{
+    background-color: purple;
+}
