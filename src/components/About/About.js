@@ -3,11 +3,13 @@ import './About.css';
 import { aboutMeText } from "../extras/TextBodies";
 
 const About = () => {
-    return(
+    return (
         <section className="wrapper">
-            <header className="aboutHeader">A little about James-Ryan Stampley...</header>
+            <header className="aboutHeader">
+                A little about James-Ryan Stampley...
+            </header>
             <section className="body">
-                {aboutMeText}
+                <p>{aboutMeText}</p>
             </section>
         </section>
     );

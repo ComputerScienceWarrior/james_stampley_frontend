@@ -1,23 +1,56 @@
-.wrapper{
+/* Wrapper for entire section */
+.wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background to create contrast */
 }
 
-.aboutHeader{
+/* About header styling */
+.aboutHeader {
     font-size: 42px;
     text-align: center;
     font-style: italic;
-    padding: 10px;
+    font-weight: 600;
+    color: #333;
     margin-top: 50px;
     margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-.body{
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    max-width: 75%;
-    margin: auto;
-    font-size: 20px;
+/* Body styling */
+.body {
+    max-width: 800px;  /* Limit the width for better readability */
+    margin: 20px;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
     letter-spacing: 1px;
+    text-align: justify;  /* Align text for a more polished look */
+}
+
+/* Add a nice box shadow to give it depth */
+.wrapper {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* Add a subtle gradient background for a more modern look */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Optional: Add some responsiveness for mobile */
+@media (max-width: 768px) {
+    .aboutHeader {
+        font-size: 36px;
+    }
+
+    .body {
+        font-size: 16px;
+    }
 }
