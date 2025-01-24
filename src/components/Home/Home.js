@@ -14,7 +14,7 @@ const Home = () => {
     if (swiperRef.current) {
       swiperRef.current.swiper.update();
     }
-  }, [ProjectData]);
+  }, []);
 
   return (
     <div className="container">
