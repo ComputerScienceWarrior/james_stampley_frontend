@@ -1,56 +1,66 @@
-/* Wrapper for entire section */
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f9fa; /* Light background to create contrast */
+/* Page background */
+.about-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
 }
 
-/* About header styling */
-.aboutHeader {
-    font-size: 42px;
-    text-align: center;
-    font-style: italic;
-    font-weight: 600;
-    color: #333;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+/* Card */
+.about-card {
+  max-width: 800px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2rem 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.6s ease-in-out;
 }
 
-/* Body styling */
-.body {
-    max-width: 800px;  /* Limit the width for better readability */
-    margin: 20px;
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-    letter-spacing: 1px;
-    text-align: justify;  /* Align text for a more polished look */
+/* Title */
+.about-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
 }
 
-/* Add a nice box shadow to give it depth */
-.wrapper {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-color: #ffffff;
+/* Divider line */
+.about-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  margin: 0 auto 1.5rem auto;
+  border-radius: 2px;
 }
 
-/* Add a subtle gradient background for a more modern look */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+/* Body text */
+.about-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cbd5f5;
+  text-align: center;
 }
 
-/* Optional: Add some responsiveness for mobile */
-@media (max-width: 768px) {
-    .aboutHeader {
-        font-size: 36px;
-    }
+/* Paragraph spacing */
+.about-body p {
+  margin-bottom: 1rem;
+}
 
-    .body {
-        font-size: 16px;
-    }
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
