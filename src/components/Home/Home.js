@@ -19,16 +19,18 @@ const Home = () => {
   return (
     <div className="container">
       <header className="header">
+        <h1 className="title">My Projects</h1>
+
         <Swiper
-            ref={swiperRef}
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 3000 }}
-            loop={true}
-            className="mySwiper"
+          ref={swiperRef}
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3500 }}
+          loop={true}
+          className="mySwiper"
         >
           {ProjectData.map((project, index) => (
             <SwiperSlide key={project.id || index}>
@@ -38,17 +40,22 @@ const Home = () => {
                   alt={`${project.name} preview`}
                   className="card-image"
                 />
-                <h3 className="card-title">{project.name}</h3>
-                <p className="card-caption">{project.caption}</p>
-                <p className="card-language">
-                  <strong>Languages/Technologies:</strong> {project.language}
-                </p>
+
+                <div className="card-content">
+                  <h3 className="card-title">{project.name}</h3>
+                  <p className="card-caption">{project.caption}</p>
+                  <p className="card-language">
+                    <strong>Technologies:</strong> {project.language}
+                  </p>
+                </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </header>
     </div>
+
+
   );
 };
 
