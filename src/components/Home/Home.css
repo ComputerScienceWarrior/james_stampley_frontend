@@ -1,118 +1,113 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f7f8fc;
+/* Page background */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* Header wrapper */
+.header {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Image */
+.card-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* Content wrapper */
+.card-content {
+  padding: 0.5rem;
+}
+
+/* Title */
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Caption */
+.card-caption {
+  font-size: 0.95rem;
+  color: #cbd5f5;
+  margin-bottom: 1rem;
+}
+
+/* Tech text */
+.card-language {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* Swiper tweaks */
+.mySwiper {
+  padding-bottom: 3rem;
+}
+
+/* Pagination dots */
+.swiper-pagination-bullet {
+  background: #94a3b8;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+  opacity: 1;
+}
+
+/* Navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.card {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .header {
-    width: 100%;
-    max-width: 1200px; 
-    position: relative;
-  }
-  
-  /* Swiper Styles */
-  .mySwiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-pagination-bullets {
-    bottom: 20px;
-    z-index: 10;
-  }
-  
-  .swiper-button-next, .swiper-button-prev {
-    color: #000;
-    z-index: 10;
-  }
-  
-  /* Card Styles */
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 100%;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
-  }
-  
-  .card-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
-    margin-top: 15px;
-  }
-  
-  .card-caption {
-    font-size: 1rem;
-    color: #666;
-    margin: 10px 0;
-  }
-  
-  .card-language {
-    font-size: 0.9rem;
-    color: #444;
-    margin-top: 15px;
-  }
-  
-  .card-language strong {
-    color: #000;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .card {
-      padding: 15px;
-    }
-  
-    .card-title {
-      font-size: 1.25rem;
-    }
-  
-    .card-caption {
-      font-size: 0.95rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .card {
-      padding: 10px;
-    }
-  
-    .card-title {
-      font-size: 1.1rem;
-    }
-  
-    .card-caption {
-      font-size: 0.9rem;
-    }
-  }
-  
+}
