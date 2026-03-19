@@ -1,25 +1,91 @@
-.nameAndDateWrapper{
-    display: flex;
-    flex-direction: row;
+/* Card */
+.work-card {
+  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.companyName1{
-    font-weight: bold;
-    font-size: 12px;
-    text-transform: capitalize;
+/* Hover */
+.work-card:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.workExperienceSummaries{
-    margin: 20px;
+/* Header */
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  cursor: pointer;
 }
 
-.viewMoreToggle{
-    float: right;
-    width: 50px;
-    height: 20px;
+/* Left side */
+.work-main {
+  display: flex;
+  flex-direction: column;
 }
 
-.imageArrow{
-    width: 16px;
-    height: 16px;
+.work-job {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.work-company {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* Right side */
+.work-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.work-date {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+/* Toggle (+ / -) */
+.work-toggle {
+  font-size: 1.4rem;
+  color: #818cf8;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.work-card.open .work-toggle {
+  transform: rotate(180deg);
+}
+
+/* Expandable content */
+.work-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* When open */
+.work-content.show {
+  max-height: 500px;
+  padding: 0 1.2rem 1rem 1.2rem;
+}
+
+/* Bullet list */
+.work-content ul {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Bullet items */
+.work-content li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  line-height: 1.5;
 }
