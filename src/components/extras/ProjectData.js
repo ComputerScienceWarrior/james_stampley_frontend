@@ -12,7 +12,7 @@ const ProjectData = [
         name: "Job Scraper",
         caption: "A web scraper made using the Ruby language.", 
         imageSource: "https://placehold.co/600x400",
-        language: 'C# / .NET Framework',
+        language: 'Ruby',
         cardColor: 'purple',
     },
     {
