@@ -1,17 +1,72 @@
-/* .wrapper{
+/* Wrapper (sticky navbar) */
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 
-} */
-
-.navigationWrapper{
-    display: flex;
-    justify-content: center;
+  background: rgba(2, 6, 23, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.items{
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
+/* Inner container */
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+/* Nav items container */
+.nav-items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Links */
+.nav-link {
+  text-decoration: none;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+/* Hover */
+.nav-link:hover {
+  color: white;
+}
+
+/* Active page */
+.nav-link.active {
+  color: white;
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
 }
