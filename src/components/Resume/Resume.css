@@ -1,31 +1,84 @@
-.resumeContainer{
-    margin-left: 10%;
-    margin-right: 10%;
-    border: solid black 1px;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+/* Background */
+.resume-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
 }
 
-.resumePadded{
-    padding: 20px;
+/* Main card */
+.resume-card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.6s ease;
 }
 
-.headerInfo{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
+/* Header */
+.resume-header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.titleHeader{
-    text-decoration: underline;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: lightgray;
-    padding: 3px;
+.resume-name {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.summaryBody{
-    margin-left: 20px;
+.resume-contact {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Sections */
+.resume-section {
+  margin-top: 2rem;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Accent line */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin-top: 6px;
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  border-radius: 2px;
+}
+
+/* Body text */
+.section-body {
+  color: #cbd5f5;
+  line-height: 1.7;
+}
+
+/* Smooth entry */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
