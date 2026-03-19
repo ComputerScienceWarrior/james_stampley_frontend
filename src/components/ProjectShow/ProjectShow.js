@@ -12,18 +12,21 @@ const ProjectShow = () => {
     const language = location.state?.language;
 
     return (
-        <section className="projectShowWrapper">
-            <section className="projectDetails">
-                <div className="programmingLanguage">Language: <span>{language}</span></div>
-                <div className="projectDetail">ID: <span>{id}</span></div>
-                <div className="projectDetail">Project Name: <span>{name}</span></div>
-            </section>
-            <section className="imageWrapper">
-                <img src={image} alt="Project Preview" className="projectImage" />
-            </section>
-            <section className="captionWrapper">
-                <p>{caption}</p>
-            </section>
+        <section className="project-show-container">
+            <div className="project-show-card">
+                <h1 className="project-show-title">{name}</h1>
+                <div className="project-show-meta">
+                    <span>ID: {id}</span>
+                    <span>Language: {language}</span>
+                </div>
+
+                <div className="project-show-image-wrapper">
+                    <img src={image} alt="Project Preview" />
+                </div>
+
+                <p className="project-show-caption">{caption}</p>
+
+            </div>
         </section>
     );
 };

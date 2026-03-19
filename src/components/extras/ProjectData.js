@@ -1,16 +1,16 @@
 const ProjectData = [
     {
         id : "1",
-        name: "Fitness Mobile App",
+        name: "Fitness Mobile App (front end)",
         caption: "A fitness Mobile Application to help you along the way of your fitness journey.", 
         imageSource: "https://placehold.co/600x400",
-        language: 'JavaScript / React Native / Ruby on Rails',
+        language: 'JavaScript / React Native',
         cardColor: 'yellow'
     },
     {
         id : "2",
-        name: "Inventory Management System",
-        caption: "A system for keeping track of inventory.", 
+        name: "Job Scraper",
+        caption: "A web scraper made using the Ruby language.", 
         imageSource: "https://placehold.co/600x400",
         language: 'C# / .NET Framework',
         cardColor: 'purple',
@@ -30,6 +30,14 @@ const ProjectData = [
         imageSource: 'https://placehold.co/600x400',
         language: 'React Native',
         cardColor: 'light-blue',
+    },
+    {
+        id: '5',
+        name: 'Fitness Mobile API (backend)',
+        caption: 'A backend API created with Ruby that handles all CRUD operations for the Mobile Application..',
+        imageSource: 'https://placehold.co/600x400',
+        language: 'Ruby',
+        cardColor: 'maroon',
     }
 ]
 

@@ -1,19 +1,20 @@
-.projectsWrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-    gap: 20px;
-    justify-items: center; 
-    padding: 20px; 
+.projects-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+  color: white;
 }
 
-@media (max-width: 768px) {
-    .projectsWrapper {
-        grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
-    }
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-@media (max-width: 480px) {
-    .projectsWrapper {
-        grid-template-columns: 1fr; /* 1 item per row on very small screens */
-    }
+/* GRID = HUGE upgrade */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
