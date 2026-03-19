@@ -1,9 +1,89 @@
-.educationWrapper{
-    margin: 20px;
+/* Card */
+.education-card {
+  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.schoolNameAndDatesAttended{
-    margin-bottom: 3px;
-    display: flex;
-    justify-content: space-between;
+/* Hover */
+.education-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Header */
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  cursor: pointer;
+}
+
+/* Left */
+.education-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-school {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.education-degree {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* Right */
+.education-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.education-years {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+/* Toggle */
+.education-toggle {
+  font-size: 1.4rem;
+  color: #818cf8;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.education-card.open .education-toggle {
+  transform: rotate(180deg);
+}
+
+/* Expand */
+.education-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.education-content.show {
+  max-height: 500px;
+  padding: 0 1.2rem 1rem 1.2rem;
+}
+
+/* Bullets */
+.education-content ul {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.education-content li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  line-height: 1.5;
 }

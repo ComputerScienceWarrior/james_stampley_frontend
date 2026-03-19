@@ -1,40 +1,40 @@
 import React, { useState } from "react";
-import './Education.css';
+import "./Education.css";
 
-const Eduaction = (props) => {
-    const [viewMore, setViewMore] = useState(false);
-    const changeView = () => {
-        setViewMore(!viewMore);
-    };
+const Education = (props) => {
+  const [viewMore, setViewMore] = useState(false);
 
-    return(
-        <section className="educationWrapper">
-            <section className="schoolNameAndDatesAttended">
-                <section className="">{props.name}</section>
-                <section className="">{props.yearsAttended}</section>
-            </section>
-            <section><b>{props.degree}</b></section>
-            <button className="viewMoreToggle" onClick={changeView}>
-                {
-                    viewMore 
-                        ?
-                            <img alt="img" className="imageArrow" src="/arrow-up.png"/>
-                        : 
-                            <img alt="img" className="imageArrow" src="/drop-down-arrow.png"/>
-                }
-            </button>
-            {
-                viewMore && (
-                    <ul>
-                        {props.bullet1 && ( <li>{props.bullet1}</li> ) }
-                        {props.bullet2 && ( <li>{props.bullet2}</li> ) }
-                        {props.bullet3 && ( <li>{props.bullet3}</li> ) }
-                        {props.bullet4 && ( <li>{props.bullet4}</li> ) }
-                    </ul>
-                )
-            }
-        </section>
-    );
+  return (
+    <section className={`education-card ${viewMore ? "open" : ""}`}>
+      
+      <div
+        className="education-header"
+        onClick={() => setViewMore(!viewMore)}
+      >
+        <div className="education-main">
+          <h3 className="education-school">{props.name}</h3>
+          <p className="education-degree">{props.degree}</p>
+        </div>
+
+        <div className="education-meta">
+          <span className="education-years">{props.yearsAttended}</span>
+          <span className="education-toggle">
+            {viewMore ? "−" : "+"}
+          </span>
+        </div>
+      </div>
+
+      <div className={`education-content ${viewMore ? "show" : ""}`}>
+        <ul>
+          {props.bullet1 && <li>{props.bullet1}</li>}
+          {props.bullet2 && <li>{props.bullet2}</li>}
+          {props.bullet3 && <li>{props.bullet3}</li>}
+          {props.bullet4 && <li>{props.bullet4}</li>}
+        </ul>
+      </div>
+
+    </section>
+  );
 };
 
-export default Eduaction;
+export default Education;
