@@ -1,0 +1,8 @@
+.app-container {
+  background: #020617;
+  min-height: 100vh;
+}
+
+.app-content {
+  padding-top: 80px; /* prevents navbar overlap */
+}
