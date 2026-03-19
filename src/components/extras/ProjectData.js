@@ -38,6 +38,14 @@ const ProjectData = [
         imageSource: 'https://placehold.co/600x400',
         language: 'Ruby',
         cardColor: 'maroon',
+    },
+    {
+        id: '6',
+        name: 'LuxAura',
+        caption: 'A website designed to display and convey the LuxAura company and services to prospective clients.',
+        imageSource: 'https://placehold.co/600x400',
+        language: 'Ruby on Rails',
+        cardColor: 'maroon',
     }
 ]
 
