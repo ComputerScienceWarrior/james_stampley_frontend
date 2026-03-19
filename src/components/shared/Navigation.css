@@ -70,3 +70,12 @@
 .nav-link.active::after {
   width: 100%;
 }
+
+.nav-wrapper {
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-wrapper.scrolled {
+  background: rgba(2, 6, 23, 0.9);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}

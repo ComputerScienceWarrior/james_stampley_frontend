@@ -8,12 +8,10 @@ const Navigation = () => {
     <div className="nav-wrapper">
       <div className="nav-inner">
 
-        {/* Logo */}
         <Link to="/" className="nav-logo">
-          James Stampley
+          James-Ryan Stampley
         </Link>
 
-        {/* Nav Items */}
         <div className="nav-items">
           <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} to="/">Home</Link>
           <Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/about">About</Link>
